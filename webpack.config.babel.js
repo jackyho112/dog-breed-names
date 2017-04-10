@@ -8,7 +8,7 @@ export default {
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'starWarsNames',
+    library: 'dogBreedNames',
   },
   devtool: 'source-map',
   module: {

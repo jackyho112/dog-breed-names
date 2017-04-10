@@ -1,13 +1,13 @@
-import {expect} from 'chai'
-import starWarsNames from '.'
+import { expect } from 'chai'
+import dogBreedNames from '.'
 
-describe('starwars-names', () => {
+describe('dog-breed-names', () => {
   it('should have a list of all available names', () => {
-    expect(starWarsNames.all).to.satisfy(isArrayOfStrings)
+    expect(dogBreedNames.all).to.satisfy(isArrayOfStrings)
   })
 
   it('should allow me to get a random name from the list', () => {
-    expect(starWarsNames.random()).to.satisfy(isIncludedIn(starWarsNames.all))
+    expect(dogBreedNames.random()).to.satisfy(isIncludedIn(dogBreedNames.all))
   })
 })
 
