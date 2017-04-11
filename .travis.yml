@@ -11,5 +11,6 @@ notifications:
   email: false
 script:
   - npm run validate
+  - npm run release
 after_success:
   - npm run report-coverage
